@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>net.toregard</groupId>
+    <artifactId>batchenkel</artifactId>
+    <version>1.0</version>
+
+    <properties>
+        <spring.version>3.2.2.RELEASE</spring.version>
+        <spring.batch.version>2.2.0.RELEASE</spring.batch.version>
+        <mysql.driver.version>5.1.25</mysql.driver.version>
+        <junit.version>4.11</junit.version>
+        <batch.version>3.0.7.RELEASE</batch.version>
+        <springframework.version>4.2.5.RELEASE</springframework.version>
+    </properties>
+
+    <dependencies>
+        <!-- Spring Batch dependencies -->
+        <dependency>
+            <groupId>org.springframework.batch</groupId>
+            <artifactId>spring-batch-core</artifactId>
+            <version>${batch.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.batch</groupId>
+            <artifactId>spring-batch-infrastructure</artifactId>
+            <version>${batch.version}</version>
+        </dependency>
+
+        <!-- Spring Batch unit test -->
+        <dependency>
+            <groupId>org.springframework.batch</groupId>
+            <artifactId>spring-batch-test</artifactId>
+            <version>${batch.version}</version>
+        </dependency>
+
+          <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.8.5</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>ldx</groupId>
+            <artifactId>ldx</artifactId>
+            <version>2.2.2</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/ldx-2.2.2.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>ldx</groupId>
+            <artifactId>util</artifactId>
+            <version>2.2.2</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/ldx-util-2.2.2.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>ldx</groupId>
+            <artifactId>xml-core</artifactId>
+            <version>2.2.2</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/ldx-xml-core-2.2.2.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>ldx</groupId>
+            <artifactId>xml-parser</artifactId>
+            <version>2.2.2</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/ldx-xml-parser-2.2.2.jar</systemPath>
+        </dependency>
+
+    </dependencies>
+</project>
